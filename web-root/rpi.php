@@ -46,16 +46,20 @@ body {
 <div class="topnav">
   <a href="enviro.csv">Download Enviro Data</a>
   <a href="enviro-reset.php">Reset Enviro Data</a>
+  <a href="reboot.php">Reboot rPi</a>
   <a href="shutdown.php">Shutdown rPi</a>
+  <a href="rmars.php">Reboot M2P</a>
+  <a href="esmars.php">!!!STOP M2P!!!</a>
 </div>
 
 <script type="text/javascript" src="dygraph.js"></script>
 <link rel="stylesheet" href="dygraph.css" />
 </head>
 <body>
+<body style="background-color: #f8f8f8;">
 <br>
 <div id="graphdiv"
-  style="width:100%; height:80px;"></div>
+  style="width:100%; height:75px;"></div>
 
 
 
