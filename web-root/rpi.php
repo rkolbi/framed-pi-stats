@@ -44,12 +44,14 @@ body {
 <body>
 
 <div class="topnav">
+  <a href="esmars.php"><font color="#e42a1b">!!!STOP SATURN!!!</font></a>
   <a href="enviro.csv">Download Enviro Data</a>
   <a href="enviro-reset.php">Reset Enviro Data</a>
   <a href="reboot.php">Reboot rPi</a>
   <a href="shutdown.php">Shutdown rPi</a>
-  <a href="rmars.php">Reboot M2P</a>
-  <a href="esmars.php">!!!STOP M2P!!!</a>
+  <a href="rmars.php">Reboot Saturn</a>
+  <a href="exercise.php">Exercise Z-Axis</a>
+  <a href="enviro-reset.php"><font color="grey"><?php include 'latest.php';?></font></a>
 </div>
 
 <script type="text/javascript" src="dygraph.js"></script>
