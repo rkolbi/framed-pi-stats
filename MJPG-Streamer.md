@@ -51,5 +51,5 @@ https://krystof.io/mjpg-streamer-on-a-raspberry-pi-zero-w-with-a-usb-webcam-stre
   
     
     
- **When using onbaord rpi camera**  
- If using the rpi direct camera interface, replace ```input_uvc.so``` in step 5 with ```input_raspicam.so```. You will also have to enabling the rpi camera module in raspi-config.
+ **Notes**  
+When using onbaord rpi camera: If using the rpi direct camera interface, replace ```input_uvc.so``` in step 5 with ```input_raspicam.so```. You will also have to enabling the rpi camera module in raspi-config.
