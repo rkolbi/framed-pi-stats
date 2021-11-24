@@ -10,7 +10,7 @@ https://krystof.io/mjpg-streamer-on-a-raspberry-pi-zero-w-with-a-usb-webcam-stre
   
   
   
-**Step 1: Enable snapd**
+**Step 1: Enable snapd**  
 -On a Raspberry Pi running the latest version of Raspbian snap can be installed directly from the command line:  
 *sudo apt update*  
 *sudo apt install snapd*  
@@ -27,7 +27,7 @@ https://krystof.io/mjpg-streamer-on-a-raspberry-pi-zero-w-with-a-usb-webcam-stre
 *sudo snap install mjpg-streamer*  
 
 
-**Step 3: Verify usb cam is connected**
+**Step 3: Verify usb cam is connected**  
 -Verifiy usb camera is connected by using the following command, this will list all present usb devices:  
 *lsusb*  
   
@@ -37,12 +37,12 @@ https://krystof.io/mjpg-streamer-on-a-raspberry-pi-zero-w-with-a-usb-webcam-stre
 *v4l2-ctl -V*  
   
   
-**Step 5: Start streaming usb camera video over http**
+**Step 5: Start streaming usb camera video over http**  
 -Use the following code to begin streaming video. If the above command presented a different resolution then 640x480, edit to match.  
-*/usr/local/bin/mjpg_streamer -i "input_uvc.so -f 30 -r 640x480"  -o "output_http.so -w /usr/local/share/mjpg-streamer/www" &*    
+*/usr/local/bin/mjpg_streamer -i "input_uvc.so -f 30 -r 640x480"  -o "output_http.so -w /usr/local/share/mjpg-streamer/www"*    
   
   
-**Step 6: Watch the feed**
+**Step 6: Watch the feed**  
 -You can watch the video feed by navigating to the rpi's ip. In the following examples, my rpi is 10.0.1.141.  
 *http://10.0.1.141:8080/?action=stream*  
   
