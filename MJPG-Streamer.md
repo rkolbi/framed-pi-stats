@@ -1,4 +1,4 @@
-### Installing mpg-steamer (rpi + usb camera)
+### Installing mpg-steamer on rPi
 
 Why? Finding a software solution to smoothly, and timely, stream usb camera from the rpi to the network via http. This method also appears to have a low processing overhead so it may be able to run alongside applications without causing concern - more testing is required to confirm this.  
 
