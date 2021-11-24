@@ -12,7 +12,7 @@ https://krystof.io/mjpg-streamer-on-a-raspberry-pi-zero-w-with-a-usb-webcam-stre
   
 **Step 1: Enable snapd**  
 -On a Raspberry Pi running the latest version of Raspbian snap can be installed directly from the command line:  
-*sudo apt update*  
+'sudo apt update'  
 *sudo apt install snapd*  
   
 -You will also need to reboot your device:  
