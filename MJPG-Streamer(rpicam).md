@@ -27,6 +27,7 @@ https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/
 ```sudo apt-get install git```   
 
 -Grab a copy of jpg-streamer  
+```cd ~```
 ```git clone https://github.com/jacksonliam/mjpg-streamer.git```  
 
 -Compile mjpg-streamer  
@@ -40,7 +41,7 @@ https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/
 
 **Step 3: Start streaming camera video over http**  
 -Use the following code to begin streaming video.   
-```/home/pi/project/mjpg-streamer/mjpg-streamer-experimental/mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so -fps 30"```    
+```/home/pi/mjpg-streamer/mjpg-streamer-experimental/mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so -fps 30"```    
 
   
 
