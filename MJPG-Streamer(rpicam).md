@@ -72,4 +72,4 @@ Now you should be able to start streaming by using the command ```livestream```.
 <br>  
 
 **Notes:**  
-!!!Needs to be tested!!! 
+To reduce any studders or pauses, try lowering frame rate from 30 to 20, or 15. 
