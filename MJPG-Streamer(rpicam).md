@@ -56,8 +56,8 @@ https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/
 
 **Extra Step: Make command to start streaming**  
 ```nano livestream```  
-```
   
+```
 cd /home/pi/mjpg-streamer/mjpg-streamer-experimental/  
 ./mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so -fps 30" &  
 ```
