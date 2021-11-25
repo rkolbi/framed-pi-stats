@@ -41,7 +41,7 @@ https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/
 
 **Step 3: Start streaming camera video over http**  
 -Use the following code to begin streaming video.   
-```/home/pi/mjpg-streamer/mjpg-streamer-experimental/mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so -fps 30"```    
+```./mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so -fps 30"```    
 
   
 
@@ -51,7 +51,15 @@ https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/
 
 -You can access the full interface, which will allow you to change video parameters by navigating to the following:  
 ```http://10.0.1.141:8080/stream.html```  
+  
+    
 
+**Extra Step: Make command to start streaming**  
+```nano livestream```  
+```
+cd /home/pi/mjpg-streamer/mjpg-streamer-experimental/  
+./mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so -fps 30" &  
+```
 
 <br>  
 
