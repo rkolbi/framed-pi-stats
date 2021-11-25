@@ -27,7 +27,7 @@ https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/
 ```sudo apt-get install git```   
 
 -Grab a copy of jpg-streamer  
-```cd ~```
+```cd ~```  
 ```git clone https://github.com/jacksonliam/mjpg-streamer.git```  
 
 -Compile mjpg-streamer  
