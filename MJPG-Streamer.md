@@ -48,9 +48,3 @@ https://krystof.io/mjpg-streamer-on-a-raspberry-pi-zero-w-with-a-usb-webcam-stre
   
 -You can access the full interface, which will allow you to change video parameters by navigating to the following:  
 ```http://10.0.1.141:8080/stream.html```  
-  
-    
-<br>  
-
-**Notes:**  
-!!!Needs to be tested!!! When using onboard rpi camera instead of the usb type, replace ```input_uvc.so``` in step 5 with ```input_raspicam.so```. You will also have to enabling the rpi camera module in raspi-config.
