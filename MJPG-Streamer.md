@@ -49,8 +49,8 @@ https://krystof.io/mjpg-streamer-on-a-raspberry-pi-zero-w-with-a-usb-webcam-stre
 -You can access the full interface, which will allow you to change video parameters by navigating to the following:  
 ```http://10.0.1.141:8080/stream.html```  
   
-    
-**Start streaming video on boot**  
+ <br>   
+**Extra: Start streaming video on boot**  
 -Edit the file /etc/rc.local to have mjpg-streamer start on boot.  
 ```sudo nano /etc/rc.local```  
   
