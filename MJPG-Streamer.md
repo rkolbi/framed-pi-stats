@@ -80,4 +80,5 @@ fi
   
 mjpg-streamer -i "input_uvc.so -f 30 -r 1280x720" -o "output_http.so -w /snap/mjpg-streamer/44/share/mjpg-streamer/www/"  
   
-exit 0```
+exit 0
+```
