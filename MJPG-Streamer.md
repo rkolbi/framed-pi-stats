@@ -48,3 +48,35 @@ https://krystof.io/mjpg-streamer-on-a-raspberry-pi-zero-w-with-a-usb-webcam-stre
   
 -You can access the full interface, which will allow you to change video parameters by navigating to the following:  
 ```http://10.0.1.141:8080/stream.html```  
+  
+    
+**Start streaming video on boot**  
+-Edit the file /etc/rc.local to have mjpg-streamer start on boot.  
+```sudo nano /etc/rc.local```  
+  
+Add the following line above the ```exit 0```:  
+```mjpg-streamer -i "input_uvc.so -f 30 -r 1280x720" -o "output_http.so -w /snap/mjpg-streamer/44/share/mjpg-streamer/www/"```  
+  
+Here is an example of what the file should look like:  
+```#!/bin/sh -e  
+#  
+# rc.local  
+#  
+# This script is executed at the end of each multiuser runlevel.  
+# Make sure that the script will "exit 0" on success or any other  
+# value on error.  
+#  
+# In order to enable or disable this script just change the execution  
+# bits.  
+#  
+# By default this script does nothing.  
+  
+# Print the IP address  
+_IP=$(hostname -I) || true  
+if [ "$_IP" ]; then  
+  printf "My IP address is %s\n" "$_IP"  
+fi  
+  
+mjpg-streamer -i "input_uvc.so -f 30 -r 1280x720" -o "output_http.so -w /snap/mjpg-streamer/44/share/mjpg-streamer/www/"  
+  
+exit 0```
