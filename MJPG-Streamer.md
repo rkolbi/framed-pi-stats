@@ -39,7 +39,7 @@ https://krystof.io/mjpg-streamer-on-a-raspberry-pi-zero-w-with-a-usb-webcam-stre
   
 **Step 5: Start streaming usb camera video over http**  
 -Use the following code to begin streaming video. If the above command presented a different resolution then 1280x720, edit to match.  
-```mjpg-streamer -i "input_uvc.so -f 30 -r 1280x720" -o "output_http.so -w /usr/local/share/mjpg-streamer/www"```    
+```mjpg-streamer -i "input_uvc.so -f 30 -r 1280x720" -o "output_http.so -w /snap/mjpg-streamer/44/share/mjpg-streamer/www/"```    
   
   
 **Step 6: Watch the feed**  
