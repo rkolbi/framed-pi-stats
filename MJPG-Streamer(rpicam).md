@@ -32,6 +32,7 @@ https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/
 
 -Compile mjpg-streamer  
 ```cd mjpg-streamer/mjpg-streamer-experimental/```  
+```sudo apt-get update```   
 ```sudo apt-get install cmake ```  
 ```sudo apt-get install python-imaging``` (this may throw error, but ok)  
 ```sudo apt-get install libjpeg-dev```  
