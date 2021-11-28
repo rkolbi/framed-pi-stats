@@ -25,6 +25,8 @@ modprobe g_mass_storage file=/piusb.bin removable=1 ro=0 stall=0
 /sbin/iwconfig wlan0 power off
 
 python3 /ht_logger.py &
+
+#Remove the following line if not using Kasa Smart Plug for ventilation control
 python3 /ventilate.py &
 
 exit 0
