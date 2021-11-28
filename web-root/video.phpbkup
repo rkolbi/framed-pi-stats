@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17.5px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  background-color: #b71c1c;
+  color: black;
+  color: #f2f2f2;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+
+}
+.rotateimg180 {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="esmars.php"><font color="#e42a1b">!!!STOP SATURN!!!</font></a>
+  <a href="reboot.php">Reboot rPi</a>
+  <a href="shutdown.php">Shutdown rPi</a>
+  <a href="rmars.php">Reboot Saturn</a>
+  <a href="exercise.php">Exercise Z-Axis</a>
+  <a href="mix.php">Mix</a>
+<a href="enviro-reset.php"><font color="grey"><?php include 'latest.php';?></font></a>
+</div><div class="topnav">
+<center>
+<br>
+<img border="1" src="http://10.0.1.141:8080/?action=stream" class="rotateimg180">
+<br><br>
+</div>
+<div class="topnav">
+<center><br>
+</div>
+</body>
+</html>
